@@ -5,6 +5,11 @@ describe("largestFromSubArray", function() {
     var result = largestFromSubArray(array);
 	
     expect(result instanceof Array).toBeTruthy();
-
+  });
+  
+  it ("should return [5, 27, 39, 1001]", function() {
+	var result = largestFromSubArray(array);
+	
+	expect (result).toEqual([5, 27, 39, 1001]);
   });
 });
