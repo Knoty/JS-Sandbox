@@ -1,15 +1,12 @@
 describe("largestFromSubArray", function() {
 
   function itShouldTransform (input, expected_output) {
-  
     it ("should return [" + expected_output + "]", function() {
-	var result = largestFromSubArray(input);
-	
-	expect (result).toEqual(expected_output);
-  });
+		var result = largestFromSubArray(input);
+		expect (result).toEqual(expected_output);
+	});
   }
 
- 
   it("should return array", function() {
     var result = largestFromSubArray([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 	
