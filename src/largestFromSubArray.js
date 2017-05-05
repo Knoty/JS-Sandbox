@@ -1,10 +1,10 @@
 function largestFromSubArray(arr) {
   var largest_in_sub_arr = [];
   
-  for (var i = 0; i < 4; i++)
+  for (var i = 0; i < arr.length; i++)
     {      
       arr[i].sort(compareDigits);
-      largest_in_sub_arr[i] = arr[i][3];
+      largest_in_sub_arr[i] = arr[i][arr.length - 1];
     }
   return largest_in_sub_arr;
 }
