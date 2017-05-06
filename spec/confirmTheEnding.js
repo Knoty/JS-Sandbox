@@ -4,9 +4,13 @@ function confirmTheEnding(str, target) {
 
 describe("confirmTheEnding", function() {
 
-  it('"Bastian" and "n" should return true', function() {
-    expect(confirmTheEnding("Bastian", "n")).toBeTruthy();
+  function itEndsWith(str, target, expected_result) { 
+    it('"' + str + '" and "' + target + '" should return ' + expected_result, function() {
+    expect(confirmTheEnding(str,target)).toEqual(expected_result);
   });  
+  }
+
+  itEndsWith("Bastian", "n", true);
   
   it('"Connor" and "n" should return false', function() {
     expect(confirmTheEnding("Connor", "n")).toBeFalsy();
